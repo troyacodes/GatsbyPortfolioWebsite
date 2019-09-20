@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -9,7 +8,6 @@ const IndexPage = () => {
       <SEO title="Home" />
       <section id="banner" className="ctext">
         <div className="wrapper">
-          <img src="/test.svg" id="banner-svg" alt="" />
           <div className="container d-flex align-items-center justify-content-center h-100">
             <div className="row">
               <div className="col">

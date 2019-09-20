@@ -10,21 +10,13 @@ class Header extends React.Component {
       menuOpen: false,
     }
   }
-  // This keeps your state in sync with the opening/closing of the menu
-  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+
   handleStateChange = state => {
     this.setState({ menuOpen: state.isOpen })
   }
-  // This can be used to close the menu, e.g. when a user clicks a menu item
+
   closeMenu = () => {
     this.setState({ menuOpen: false })
-  }
-
-  // This can be used to toggle the menu, e.g. when using a custom icon
-  // Tip: You probably want to hide either/both default icons if using a custom icon
-  // See https://github.com/negomi/react-burger-menu#custom-icons
-  toggleMenu = () => {
-    this.setState(state => ({ menuOpen: !state.menuOpen }))
   }
 
   render() {
@@ -32,7 +24,7 @@ class Header extends React.Component {
       <header id="header" className="w-100">
         <div className="container">
           <nav id="nav-bar">
-            <img src={logo} width="78" alt="" />
+            <img src={logo} width="78" alt="" id="nav-logo" />
             <Menu
               right
               isOpen={this.state.menuOpen}
@@ -61,6 +53,18 @@ class Header extends React.Component {
                 duration={500}
               >
                 Skills
+              </Link>
+              <Link
+                onClick={() => this.closeMenu()}
+                className="menu-item"
+                activeClass="active"
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Work
               </Link>
             </Menu>
           </nav>

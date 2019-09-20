@@ -1,13 +1,18 @@
 #header {
   background-color: $blue-color;
   padding: 1.2rem 0;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
 }
 
 #nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#nav-logo {
+  margin: 0;
 }
 
 #nav-list {
