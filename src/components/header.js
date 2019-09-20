@@ -1,6 +1,6 @@
 import React from "react"
 import { slide as Menu } from "react-burger-menu"
-import logo from "../images/test.svg"
+import Logo from "../components/logo"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 class Header extends React.Component {
@@ -24,7 +24,7 @@ class Header extends React.Component {
       <header id="header" className="w-100">
         <div className="container">
           <nav id="nav-bar">
-            <img src={logo} width="78" alt="" id="nav-logo" />
+            <Logo />
             <Menu
               right
               isOpen={this.state.menuOpen}

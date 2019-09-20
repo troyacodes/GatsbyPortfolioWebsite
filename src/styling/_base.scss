@@ -136,11 +136,12 @@ a {
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $white-color;
+  opacity: 1 !important;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: $dark-color;
+  background-color: $darker-color;
 }
 
 /* Position and sizing of clickable cross button */
@@ -151,7 +152,7 @@ a {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $dark-color;
 }
 
 /*
@@ -178,7 +179,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 2rem;
 }
 
