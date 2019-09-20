@@ -136,6 +136,8 @@ a {
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background-color: $dark-color;
+  transition: background 400ms, color 400ms;
+  -webkit-transition: background 400ms, color 400ms;
 }
 
 /* Position and sizing of clickable cross button */
@@ -190,6 +192,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: $blue-color;
   cursor: pointer;
   margin-bottom: 2rem;
+  transition: background 400ms, color 400ms;
+  -webkit-transition: background 400ms, color 400ms;
   &:hover {
     color: $dark-color;
   }

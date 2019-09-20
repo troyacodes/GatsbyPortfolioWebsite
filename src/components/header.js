@@ -24,7 +24,9 @@ class Header extends React.Component {
       <header id="header" className="w-100">
         <div className="container">
           <nav id="nav-bar">
-            <Logo />
+            <Link to="top" spy={true} smooth={true} offset={0} duration={500}>
+              <Logo />
+            </Link>
             <Menu
               right
               isOpen={this.state.menuOpen}
