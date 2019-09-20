@@ -1,0 +1,15 @@
+@include media-breakpoint-up(sm) {
+  body {
+    background-color: green;
+  }
+}
+@include media-breakpoint-up(md) {
+  body {
+    background-color: blue;
+  }
+}
+@include media-breakpoint-up(lg) {
+  body {
+    background-color: yellow;
+  }
+}

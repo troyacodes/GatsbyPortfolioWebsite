@@ -1,0 +1,55 @@
+#header {
+  background-color: $blue-color;
+  padding: 1.2rem 0;
+  position: absolute;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  justify-content: space-between;
+}
+li a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 1.3em;
+  text-transform: uppercase;
+  color: $white-color;
+  display: flex;
+}
+
+#banner {
+  background: $blue-color;
+  height: 100vh;
+  padding: 0;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+#about {
+  background: $white-color;
+}
+
+#skills {
+  background: $white-color;
+}
+
+#work {
+  background: $white-color;
+}
+
+#footer {
+  background-color: $blue-color;
+  padding: 1rem 0;
+  section {
+    padding: 1rem 0;
+  }
+}
