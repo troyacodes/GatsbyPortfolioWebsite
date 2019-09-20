@@ -32,7 +32,6 @@ class Header extends React.Component {
             >
               <Link
                 onClick={() => this.closeMenu()}
-                className="menu-item"
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -44,7 +43,6 @@ class Header extends React.Component {
               </Link>
               <Link
                 onClick={() => this.closeMenu()}
-                className="menu-item"
                 activeClass="active"
                 to="skills"
                 spy={true}
@@ -56,7 +54,6 @@ class Header extends React.Component {
               </Link>
               <Link
                 onClick={() => this.closeMenu()}
-                className="menu-item"
                 activeClass="active"
                 to="work"
                 spy={true}
