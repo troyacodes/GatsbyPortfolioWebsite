@@ -96,8 +96,7 @@ a {
     color: $blue-color;
     border: 3px solid $white-color;
   }
-  &:hover:after,
-  &:hover:active {
+  &:hover:after {
     height: 100%;
   }
 }
@@ -123,13 +122,22 @@ a {
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: relative;
-  width: 36px;
-  height: 30px;
+  width: 2.3rem;
+  height: 1.5rem;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
+  transition: background 250ms, color 250ms;
+  -webkit-transition: background 250ms, color 250ms;
   background: $white-color;
+  opacity: 1 !important;
+}
+
+.burger-bar-scrolled {
+  transition: background 250ms, color 250ms;
+  -webkit-transition: background 250ms, color 250ms;
+  background: $blue-color;
   opacity: 1 !important;
 }
 

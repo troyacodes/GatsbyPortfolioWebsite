@@ -9,6 +9,8 @@ class Header extends React.Component {
     this.state = {
       menuOpen: false,
       headerScrolledId: "header",
+      logoScrolled: "nav-logo",
+      burgerScrolled: "",
     }
   }
   handleStateChange = state => {
@@ -19,18 +21,23 @@ class Header extends React.Component {
     this.setState({ menuOpen: false })
   }
 
-  listenScrollEvent = e => {
-    if (window.scrollY > 400) {
-      this.setState({ headerScrolledId: "header-scrolled" })
-      console.log(this.state.headerScrolledId)
-    } else {
-      this.setState({ headerScrolledId: "header" })
-      console.log(this.state.headerScrolledId)
-    }
+  componentDidMount() {
+    this.prev = window.scrollY
+    window.addEventListener("scroll", this.listenScrollEvent)
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.listenScrollEvent)
+  listenScrollEvent = e => {
+    const window = e.currentTarget
+    if (this.prev > window.scrollY) {
+      this.setState({ headerScrolledId: "header-scrolled" })
+      this.setState({ logoScrolled: "nav-logo-scrolled" })
+      this.setState({ burgerScrolled: "burger-bar-scrolled" })
+    } else {
+      this.setState({ headerScrolledId: "header" })
+      this.setState({ logoScrolled: "nav-logo" })
+      this.setState({ burgerScrolled: "" })
+    }
+    this.prev = window.scrollY
   }
 
   render() {
@@ -39,12 +46,13 @@ class Header extends React.Component {
         <div>
           <nav id="nav-bar">
             <Link to="top" spy={true} smooth={true} offset={-70} duration={500}>
-              <Logo />
+              <Logo isScrolled={this.state.logoScrolled} />
             </Link>
             <Menu
               right
               isOpen={this.state.menuOpen}
               onStateChange={state => this.handleStateChange(state)}
+              burgerBarClassName={this.state.burgerScrolled}
             >
               <Link
                 onClick={() => this.closeMenu()}
