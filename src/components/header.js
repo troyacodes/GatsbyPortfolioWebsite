@@ -8,9 +8,9 @@ class Header extends React.Component {
     super(props)
     this.state = {
       menuOpen: false,
+      headerScrolledId: "header",
     }
   }
-
   handleStateChange = state => {
     this.setState({ menuOpen: state.isOpen })
   }
@@ -19,12 +19,26 @@ class Header extends React.Component {
     this.setState({ menuOpen: false })
   }
 
+  listenScrollEvent = e => {
+    if (window.scrollY > 400) {
+      this.setState({ headerScrolledId: "header-scrolled" })
+      console.log(this.state.headerScrolledId)
+    } else {
+      this.setState({ headerScrolledId: "header" })
+      console.log(this.state.headerScrolledId)
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent)
+  }
+
   render() {
     return (
-      <header id="header" className="w-100">
-        <div className="container">
+      <header id={this.state.headerScrolledId} className="w-100">
+        <div>
           <nav id="nav-bar">
-            <Link to="top" spy={true} smooth={true} offset={0} duration={500}>
+            <Link to="top" spy={true} smooth={true} offset={-70} duration={500}>
               <Logo />
             </Link>
             <Menu
@@ -38,7 +52,7 @@ class Header extends React.Component {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-70}
                 duration={500}
               >
                 About
@@ -49,7 +63,7 @@ class Header extends React.Component {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-70}
                 duration={500}
               >
                 Skills
@@ -60,7 +74,7 @@ class Header extends React.Component {
                 to="work"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-70}
                 duration={500}
               >
                 Work
