@@ -22,13 +22,12 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    this.prev = window.scrollY
     window.addEventListener("scroll", this.listenScrollEvent)
   }
 
   listenScrollEvent = e => {
     const window = e.currentTarget
-    if (this.prev > window.scrollY) {
+    if (this.prev > window.scrollY && !window.scrollY == 0) {
       this.setState({ headerScrolledId: "header-scrolled" })
       this.setState({ logoScrolled: "nav-logo-scrolled" })
       this.setState({ burgerScrolled: "burger-bar-scrolled" })

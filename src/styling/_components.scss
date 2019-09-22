@@ -1,14 +1,12 @@
 #header {
-  transition: background 500ms, color 500ms;
-  -webkit-transition: background 500ms, color 500ms;
+  transition: all 250ms linear;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   position: absolute;
   z-index: 1000;
 }
 #header-scrolled {
-  transition: background 500ms, color 500ms;
-  -webkit-transition: background 500ms, color 500ms;
+  transition: all 250ms linear;
   background-color: $white-color;
   padding: 0.5rem 1.5rem;
   position: fixed;
