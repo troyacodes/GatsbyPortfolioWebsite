@@ -3,9 +3,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faGithub,
-  faLinkedin,
-  faTwitterSquare,
+  faJsSquare,
+  faReact,
+  faHtml5,
+  faSass,
+  faCss3Alt,
+  faGit,
+  faNpm,
+  faWordpress,
+  faAdobe,
 } from "@fortawesome/free-brands-svg-icons"
 
 const IndexPage = () => {
@@ -58,24 +64,30 @@ const IndexPage = () => {
           </div>
           <div className="row ctext">
             <div className="col">
-              <FontAwesomeIcon icon={faGithub} className="fa-tool" />
+              <FontAwesomeIcon icon={faHtml5} className="fa-tool" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faLinkedin} className="fa-tool" />
+              <FontAwesomeIcon icon={faCss3Alt} className="fa-tool" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faTwitterSquare} className="fa-tool" />
+              <FontAwesomeIcon icon={faSass} className="fa-tool" />
+            </div>
+            <div className="col">
+              <FontAwesomeIcon icon={faJsSquare} className="fa-tool" />
             </div>
           </div>
           <div className="row ctext">
             <div className="col">
-              <FontAwesomeIcon icon={faGithub} className="fa-tool" />
+              <FontAwesomeIcon icon={faReact} className="fa-tool" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faLinkedin} className="fa-tool" />
+              <FontAwesomeIcon icon={faGit} className="fa-tool" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faTwitterSquare} className="fa-tool" />
+              <FontAwesomeIcon icon={faNpm} className="fa-tool" />
+            </div>
+            <div className="col">
+              <FontAwesomeIcon icon={faWordpress} className="fa-tool" />
             </div>
           </div>
         </div>

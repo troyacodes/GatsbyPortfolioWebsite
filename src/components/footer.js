@@ -5,6 +5,7 @@ import {
   faLinkedin,
   faTwitterSquare,
   faInstagram,
+  faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = ({ siteTitle }) => {
@@ -37,10 +38,10 @@ const Footer = ({ siteTitle }) => {
               <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faTwitterSquare} className="fa-icon" />
+              <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
+              <FontAwesomeIcon icon={faDribbble} className="fa-icon" />
             </div>
           </div>
           <div className="row">
