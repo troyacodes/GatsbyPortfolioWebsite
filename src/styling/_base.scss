@@ -51,7 +51,15 @@ a {
 .no-margin {
   margin: 0 !important;
 }
-//BUTTON CLASSES
+//Underline SPAN
+
+.underline {
+  vertical-align: top;
+  background: $blue-color;
+  width: 3rem;
+  height: 3px;
+  display: inline-block;
+}
 
 /* General button style (reset) */
 .btn {
@@ -116,7 +124,21 @@ a {
 .fa-icon {
   color: $white-color;
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  transition: background 250ms, color 250ms;
+  &:hover {
+    color: $dark-color;
+  }
+}
+
+.fa-tool {
+  color: $blue-color;
+  margin: 3rem 0;
+  font-size: 4rem;
+  transition: background 250ms, color 250ms;
+  &:hover {
+    color: $dark-color;
+  }
 }
 //HAMBURGER MENU
 /* Position and sizing of burger button */
@@ -135,10 +157,7 @@ a {
 }
 
 .burger-bar-scrolled {
-  transition: background 250ms, color 250ms;
-  -webkit-transition: background 250ms, color 250ms;
   background: $blue-color;
-  opacity: 1 !important;
 }
 
 /* Color/shape of burger icon bars on hover*/

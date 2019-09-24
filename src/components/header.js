@@ -28,9 +28,9 @@ class Header extends React.Component {
   listenScrollEvent = e => {
     const window = e.currentTarget
     if (this.prev > window.scrollY && !window.scrollY == 0) {
-      this.setState({ headerScrolledId: "header-scrolled" })
-      this.setState({ logoScrolled: "nav-logo-scrolled" })
-      this.setState({ burgerScrolled: "burger-bar-scrolled" })
+      this.setState({ headerScrolledId: "header header-scrolled" })
+      this.setState({ logoScrolled: "nav-logo nav-logo-scrolled" })
+      this.setState({ burgerScrolled: "bm-burger-bars burger-bar-scrolled" })
     } else {
       this.setState({ headerScrolledId: "header" })
       this.setState({ logoScrolled: "nav-logo" })
@@ -41,7 +41,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header id={this.state.headerScrolledId} className="w-100">
+      <header className={`${this.state.headerScrolledId} w-100`}>
         <div>
           <nav id="nav-bar">
             <Link to="top" spy={true} smooth={true} offset={-70} duration={500}>
