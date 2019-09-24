@@ -14,6 +14,11 @@ const Footer = ({ siteTitle }) => {
         <div className="container">
           <div className="row">
             <div className="col">
+              <p className="ctext">Drop me a line</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <a href="mailto:michael@sixsidemedia.ca">
                 michael@sixsidemedia.ca
               </a>
@@ -21,7 +26,8 @@ const Footer = ({ siteTitle }) => {
           </div>
         </div>
       </section>
-      <section id="social-links">
+      <span className="footer-line"></span>
+      <section id="final-footer">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -37,16 +43,9 @@ const Footer = ({ siteTitle }) => {
               <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
             </div>
           </div>
-        </div>
-      </section>
-      <section id="final-footer">
-        <span className="footer-line"></span>
-        <div className="container">
           <div className="row">
             <div className="col">
-              <p className="light-text no-margin">
-                Copyright © 2019 Michael Troya.
-              </p>
+              <p className="light-text">© 2019 Michael Troya.</p>
             </div>
           </div>
         </div>

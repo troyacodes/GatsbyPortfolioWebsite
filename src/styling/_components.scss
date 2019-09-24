@@ -8,7 +8,7 @@
 }
 .header-scrolled {
   padding: 0.5rem 1.5rem;
-  background-color: $white-color;
+  background-color: $secondary-color;
   position: fixed;
   box-shadow: 0px 11px 47px -9px rgba(0, 0, 0, 0.49);
 }
@@ -48,26 +48,30 @@
 
 #footer {
   background-color: $main-color;
-  padding: 1rem 0;
-  section {
-    padding: 1rem 0;
+  padding: 0 0 1rem 0;
+}
+
+#email {
+  padding: 4rem 0;
+  p {
+    font-size: 1.2rem;
+    color: $white-color;
+    opacity: 0.5;
+  }
+  a {
+    color: $white-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 250ms, color 250ms;
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
-
-#social-links p,
-#email p {
-  font-size: 1rem;
-  color: $white-color;
-  text-align: left;
-}
-
-#email a {
-  color: $white-color;
-  font-size: 1.4rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 250ms, color 250ms;
-  &:hover {
-    color: $secondary-color;
+#final-footer {
+  padding: 4rem 0 1rem 0;
+  p {
+    margin: 4rem 0 0 0;
   }
 }

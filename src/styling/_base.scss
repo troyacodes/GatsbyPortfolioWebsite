@@ -1,8 +1,8 @@
 //  ------------ COLOR VARIABLES
-$main-color: #01a2d2;
-$secondary-color: #001015;
+$main-color: #1a1e23;
+$secondary-color: #e2b41c;
 
-$dark-color: #141414;
+$dark-color: #111111;
 $white-color: #ffff;
 $grey-color: #797979;
 
@@ -52,20 +52,19 @@ section {
 
 .underline {
   vertical-align: top;
-  background: $main-color;
+  background: $secondary-color;
   width: 3rem;
   height: 3px;
   display: inline-block;
 }
 
 .footer-line {
-  margin: 1rem 0 2rem 0;
   background: $white-color;
   border: none;
   height: 0.05rem;
   width: 75%;
   display: inline-block;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 //  ------------ NAV LOGO
@@ -77,7 +76,6 @@ section {
 }
 
 .nav-logo-scrolled {
-  fill: $main-color;
 }
 
 //  ------------------------------------------- HAMBURGER MENU
@@ -97,7 +95,6 @@ section {
 }
 
 .burger-bar-scrolled {
-  background: $main-color;
 }
 
 /* Color/shape of burger icon bars on hover*/
