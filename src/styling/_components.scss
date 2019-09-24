@@ -1,3 +1,4 @@
+//  ------------ HEADER AND NAV STYLES
 .header {
   background-color: $transparent;
   padding: 1rem 1.5rem;
@@ -18,28 +19,55 @@
   justify-content: space-between;
 }
 
+//  ------------ MAIN BANNER STYLES
+
 #banner {
-  background: $blue-color;
+  background: $main-color;
   height: 100vh;
   padding: 0;
 }
+// ------------  ABOUT ME STYLES
 
 #about {
   background: $white-color;
 }
 
+//  ------------ PORTFOLIO STYLES
+
 #skills {
   background: #f1f1f1;
 }
+
+// ------------ PORTFOLIO STYLES
 
 #work {
   background: $white-color;
 }
 
+// ------------ FOOTER STYLES
+
 #footer {
-  background-color: $blue-color;
+  background-color: $main-color;
   padding: 1rem 0;
   section {
     padding: 1rem 0;
+  }
+}
+
+#social-links p,
+#email p {
+  font-size: 1rem;
+  color: $white-color;
+  text-align: left;
+}
+
+#email a {
+  color: $white-color;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 250ms, color 250ms;
+  &:hover {
+    color: $secondary-color;
   }
 }

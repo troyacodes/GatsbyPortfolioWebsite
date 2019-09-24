@@ -1,9 +1,17 @@
+//  ------------  IMPORT GOOGLE FONTS
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700&display=swap");
 
+//  ------------ MAIN BODY FONT STYLING
 body {
   font-family: "Open Sans", sans-serif;
 }
-
+p {
+  color: $grey-color;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+//  ------------ FONT STYLING HEADING
 h1,
 h2,
 h3,
@@ -104,8 +112,25 @@ h6 {
   line-height: 1.1;
 }
 
-p {
-  color: $grey-color;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+//  ------------ FONT AWESOME ICONS
+.fa-icon {
+  color: $white-color;
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 250ms, color 250ms;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.fa-tool {
+  color: $main-color;
+  margin: 3rem 0;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: background 250ms, color 250ms;
+  &:hover {
+    color: $secondary-color;
+  }
 }

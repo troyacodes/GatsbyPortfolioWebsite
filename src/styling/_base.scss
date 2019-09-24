@@ -1,26 +1,23 @@
-@import "reset";
-// COLOR VARIABLES
-$dark-color: #001015;
-$darker-color: #141414;
+//  ------------ COLOR VARIABLES
+$main-color: #01a2d2;
+$secondary-color: #001015;
+
+$dark-color: #141414;
 $white-color: #ffff;
 $grey-color: #797979;
-$blue-color: #01a2d2;
+
 $transparent: transparent;
-//GENERAL CLASSES
+//  ------------ GENERAL CLASSES
 
 ::selection {
-  background: $darker-color; /* WebKit/Blink Browsers */
+  background: $dark-color; /* WebKit/Blink Browsers */
 }
 
 section {
   padding: 4rem 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-//HELPER CLASSES
+//  ------------ HELPER CLASSES
 
 .wrapper {
   position: relative;
@@ -45,102 +42,33 @@ a {
 }
 
 .dark-text {
-  color: $dark-color;
+  color: $secondary-color;
 }
 
 .no-margin {
   margin: 0 !important;
 }
-//Underline SPAN
+//  ------------  UNDERLINES
 
 .underline {
   vertical-align: top;
-  background: $blue-color;
+  background: $main-color;
   width: 3rem;
   height: 3px;
   display: inline-block;
 }
 
-/* General button style (reset) */
-.btn {
-  font-family: "Montserrat", sans-serif;
+.footer-line {
+  margin: 1rem 0 2rem 0;
+  background: $white-color;
   border: none;
-  z-index: 100;
-  font-size: 0.8rem;
-  background: none;
-  padding: 0.6rem 2rem;
+  height: 0.05rem;
+  width: 75%;
   display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-}
-.btn-main {
-  border: 3px solid $white-color;
-  background-color: $transparent;
-  color: $white-color;
-  &:after {
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background: $white-color;
-  }
-  &:hover,
-  &:active {
-    color: $blue-color;
-    border: 3px solid $white-color;
-  }
-  &:hover:after {
-    height: 100%;
-  }
+  opacity: 0.4;
 }
 
-// BANNER SVG IMAGE
-#banner-svg {
-  transform: rotate(13deg);
-  position: absolute;
-  top: 22%;
-  left: -5%;
-  width: 548px;
-  max-width: none;
-  overflow: hidden;
-}
-
-// FONT AWESOME ICONS
-.fa-icon {
-  color: $white-color;
-  margin: 0;
-  font-size: 2.5rem;
-  transition: background 250ms, color 250ms;
-  &:hover {
-    color: $dark-color;
-  }
-}
-
-.fa-tool {
-  color: $blue-color;
-  margin: 3rem 0;
-  font-size: 4rem;
-  transition: background 250ms, color 250ms;
-  &:hover {
-    color: $dark-color;
-  }
-}
-//NAV LOGO
+//  ------------ NAV LOGO
 .nav-logo {
   fill: $white-color;
   width: 3.5rem;
@@ -149,10 +77,10 @@ a {
 }
 
 .nav-logo-scrolled {
-  fill: $blue-color;
+  fill: $main-color;
 }
 
-//HAMBURGER MENU
+//  ------------------------------------------- HAMBURGER MENU
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: relative;
@@ -169,12 +97,12 @@ a {
 }
 
 .burger-bar-scrolled {
-  background: $blue-color;
+  background: $main-color;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background-color: $dark-color;
+  background-color: $secondary-color;
   transition: background 400ms, color 400ms;
   -webkit-transition: background 400ms, color 400ms;
 }
@@ -187,7 +115,7 @@ a {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: $dark-color;
+  background: $secondary-color;
 }
 
 /*
@@ -228,19 +156,67 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 2.2rem;
   padding: 1rem;
   font-weight: bold;
-  color: $blue-color;
+  color: $main-color;
   cursor: pointer;
   margin-bottom: 2rem;
   transition: background 400ms, color 400ms;
   -webkit-transition: background 400ms, color 400ms;
   &:hover {
-    color: $dark-color;
+    color: $secondary-color;
   }
 }
 
-/* Styling of overlay */
+//  Styling of overlay
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   left: 0;
   top: 0;
+}
+
+//  ------------ MAIN BUTTON STYLES
+.btn {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  z-index: 100;
+  font-size: 0.8rem;
+  background: none;
+  padding: 0.6rem 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.btn-main {
+  border: 3px solid $white-color;
+  background-color: $transparent;
+  color: $white-color;
+  &:after {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: $white-color;
+  }
+  &:hover,
+  &:active {
+    color: $main-color;
+    border: 3px solid $white-color;
+  }
+  &:hover:after {
+    height: 100%;
+  }
 }
