@@ -44,6 +44,18 @@
   background: $white-color;
 }
 
+.work-item {
+  background-color: $main-color;
+}
+.work-img {
+}
+
+.work-text {
+  padding: 0.5rem 1rem 2rem;
+  h3 {
+    color: $secondary-color;
+  }
+}
 // ------------ FOOTER STYLES
 
 #footer {

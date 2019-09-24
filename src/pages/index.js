@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Test from "../images/cat.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faJsSquare,
@@ -99,14 +100,38 @@ const IndexPage = () => {
             <div className="col">
               <h2>MY WORK</h2>
               <span className="underline"></span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h4>JS WORK</h4>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing Unicode symbols.
+                  </p>
+                  <button className="btn btn-main">View </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h4>JS WORK</h4>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing Unicode symbols.
+                  </p>
+                  <button className="btn btn-main">View</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
