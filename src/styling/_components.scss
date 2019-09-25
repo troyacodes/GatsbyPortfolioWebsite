@@ -24,10 +24,21 @@
   padding: 0;
   text-align: center;
 }
+
+.banner-logo {
+  fill: $offblue-color;
+  position: absolute;
+  left: -7rem;
+  top: 4rem;
+  width: 34rem;
+}
 // ------------  ABOUT ME STYLES
 
 #about {
-  background: $white-color;
+  background: $offblue-color;
+  h2 {
+    color: $white-color;
+  }
 }
 
 // ------------ PORTFOLIO STYLES
@@ -40,7 +51,7 @@
 }
 
 .work-item {
-  background-color: #222731;
+  background-color: $offblue-color;
   margin: 1rem 0;
   box-shadow: 0px 6px 43px -19px rgba(0, 0, 0, 0.75);
 }
@@ -48,12 +59,12 @@
 }
 
 .work-text {
-  padding: 0.5rem 1rem 2rem;
+  padding: 0.5rem 1.5rem 2rem;
   h3 {
     color: $secondary-color;
   }
   button {
-    margin-right: 0.8rem;
+    margin: 0 0.8rem 0.8rem 0;
   }
 }
 

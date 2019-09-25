@@ -29,7 +29,7 @@ class Header extends React.Component {
 
   listenScrollEvent = e => {
     const window = e.currentTarget
-    if (this.prev > window.scrollY && !window.scrollY == 0) {
+    if (!window.scrollY == 0) {
       this.setState({
         headerScrolledId: "header header-scrolled",
         logoScrolled: "nav-logo nav-logo-scrolled",
@@ -54,7 +54,7 @@ class Header extends React.Component {
       <header className={`${this.state.headerScrolledId} w-100`}>
         <div>
           <nav id="nav-bar">
-            <Link to="top" spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="top" spy={true} smooth={true} offset={0} duration={500}>
               <Logo isScrolled={this.state.logoScrolled} />
             </Link>
             <div className={this.state.menuCircle}>
@@ -69,37 +69,47 @@ class Header extends React.Component {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={50}
                   duration={500}
                 >
                   About
                 </Link>
                 <Link
                   onClick={() => this.closeMenu()}
-                  to="skills"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                  Skills
-                </Link>
-                <Link
-                  onClick={() => this.closeMenu()}
                   to="work"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={50}
                   duration={500}
                 >
                   Work
                 </Link>
                 <Link
                   onClick={() => this.closeMenu()}
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Skills
+                </Link>
+                <Link
+                  onClick={() => this.closeMenu()}
+                  to="footer"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+                <Link
+                  onClick={() => this.closeMenu()}
                   to="top"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={0}
                   duration={500}
                   id={this.state.toTopLink}
                 >

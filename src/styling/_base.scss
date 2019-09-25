@@ -1,16 +1,17 @@
 //  ------------ COLOR VARIABLES
 $main-color: #171a21;
 $secondary-color: #f9d342;
+$offblue-color: #1d2027;
 
 $dark-color: #111111;
 $white-color: #ffff;
-$grey-color: #797979;
+$grey-color: #8e8e8e;
 
 $transparent: transparent;
 //  ------------ GENERAL CLASSES
 
 ::selection {
-  background: $dark-color; /* WebKit/Blink Browsers */
+  background: $secondary-color; /* WebKit/Blink Browsers */
 }
 
 section {
@@ -79,7 +80,7 @@ section {
   top: 1rem;
   transition: all 0.3s;
   background: $secondary-color;
-  padding: 0.5rem;
+  padding: 0.6rem;
   box-shadow: 0px 2px 39px -8px rgba(0, 0, 0, 0.75);
 }
 
@@ -124,8 +125,8 @@ section {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 1rem;
+  width: 1rem;
 }
 
 /* Color/shape of close button cross */
@@ -145,7 +146,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: $white-color;
+  background: $offblue-color;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -171,13 +172,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 2.2rem;
   padding: 1rem;
   font-weight: bold;
-  color: $main-color;
+  color: $secondary-color;
   cursor: pointer;
   margin-bottom: 2rem;
   transition: background 400ms, color 400ms;
   -webkit-transition: background 400ms, color 400ms;
   &:hover {
-    color: $secondary-color;
+    color: $white-color;
   }
 }
 
@@ -247,7 +248,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-transform: uppercase;
   color: $secondary-color;
   &:hover {
-    color: $main-color;
+    color: $white-color;
   }
 }
 #hide-to-top {
