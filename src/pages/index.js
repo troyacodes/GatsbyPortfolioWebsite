@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../components/logo"
 import Test from "../images/cat.jpg"
+import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faJsSquare,
@@ -30,7 +31,15 @@ const IndexPage = () => {
                   I'm <span className="dark-text">Michael</span>,<br />a Front
                   End Developer
                 </h1>
-                <button className="btn btn-main">Contact Me</button>
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={80}
+                  duration={500}
+                >
+                  <button className="btn btn-main">View Work</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -72,7 +81,7 @@ const IndexPage = () => {
                   <img src={Test} alt="" className="w-100" />
                 </div>
                 <div className="work-text">
-                  <h3>JS WORK</h3>
+                  <h3>React Spotify App</h3>
                   <ul className="tech-list">
                     <li>HTML</li>
                     <li>REACT</li>
@@ -93,7 +102,7 @@ const IndexPage = () => {
                   <img src={Test} alt="" className="w-100" />
                 </div>
                 <div className="work-text">
-                  <h3>JS WORK</h3>
+                  <h3>React Calculator</h3>
                   <ul className="tech-list">
                     <li>HTML</li>
                     <li>REACT</li>

@@ -6,6 +6,7 @@ import {
   faInstagram,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = ({ siteTitle }) => {
   return (
@@ -31,21 +32,29 @@ const Footer = ({ siteTitle }) => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <FontAwesomeIcon icon={faGithub} className="fa-icon" />
+              <a href="https://github.com/troyacodes" target="_blank">
+                <FontAwesomeIcon icon={faGithub} className="fa-icon" />
+              </a>
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
+              <a href="https://github.com/troyacodes" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
+              </a>
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
+              <a href="https://github.com/sixsidemedia" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
+              </a>
             </div>
             <div className="col">
-              <FontAwesomeIcon icon={faDribbble} className="fa-icon" />
+              <a href="https://dribbble.com/MichaelTroya" target="_blank">
+                <FontAwesomeIcon icon={faDribbble} className="fa-icon" />
+              </a>
             </div>
           </div>
           <div className="row">
             <div className="col">
-              <p className="light-text">© 2019 Michael Troya.</p>
+              <p>© 2019 Michael Troya.</p>
             </div>
           </div>
         </div>

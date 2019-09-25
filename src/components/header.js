@@ -2,6 +2,8 @@ import React from "react"
 import { slide as Menu } from "react-burger-menu"
 import Logo from "../components/logo"
 import { Link } from "react-scroll"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHandPointUp } from "@fortawesome/free-solid-svg-icons"
 
 class Header extends React.Component {
   constructor(props) {
@@ -69,7 +71,7 @@ class Header extends React.Component {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={80}
                   duration={500}
                 >
                   About
@@ -79,7 +81,7 @@ class Header extends React.Component {
                   to="work"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={80}
                   duration={500}
                 >
                   Work
@@ -89,7 +91,7 @@ class Header extends React.Component {
                   to="skills"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={80}
                   duration={500}
                 >
                   Skills
@@ -99,7 +101,7 @@ class Header extends React.Component {
                   to="footer"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={80}
                   duration={500}
                 >
                   Contact
@@ -113,7 +115,9 @@ class Header extends React.Component {
                   duration={500}
                   id={this.state.toTopLink}
                 >
-                  Back To Top
+                  <FontAwesomeIcon icon={faHandPointUp} />
+                  &nbsp;Back To Top&nbsp;
+                  <FontAwesomeIcon icon={faHandPointUp} />
                 </Link>
               </Menu>
             </div>
