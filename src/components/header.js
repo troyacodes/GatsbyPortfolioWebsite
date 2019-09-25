@@ -1,7 +1,7 @@
 import React from "react"
 import { slide as Menu } from "react-burger-menu"
 import Logo from "../components/logo"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 class Header extends React.Component {
   constructor(props) {
@@ -11,6 +11,8 @@ class Header extends React.Component {
       headerScrolledId: "header",
       logoScrolled: "nav-logo",
       burgerScrolled: "",
+      menuCircle: "menu-square",
+      toTopLink: "hide-to-top",
     }
   }
   handleStateChange = state => {
@@ -27,14 +29,22 @@ class Header extends React.Component {
 
   listenScrollEvent = e => {
     const window = e.currentTarget
-    if (this.prev > window.scrollY && !window.scrollY == 0) {
-      this.setState({ headerScrolledId: "header header-scrolled" })
-      this.setState({ logoScrolled: "nav-logo nav-logo-scrolled" })
-      this.setState({ burgerScrolled: "bm-burger-bars burger-bar-scrolled" })
+    if (this.prev > window.scrollY && !window.scrollY === 0) {
+      this.setState({
+        headerScrolledId: "header header-scrolled",
+        logoScrolled: "nav-logo nav-logo-scrolled",
+        burgerScrolled: "bm-burger-bars burger-bar-scrolled",
+        menuCircle: "menu-square menu-square-scrolled",
+        toTopLink: "show-to-top",
+      })
     } else {
-      this.setState({ headerScrolledId: "header" })
-      this.setState({ logoScrolled: "nav-logo" })
-      this.setState({ burgerScrolled: "" })
+      this.setState({
+        headerScrolledId: "header",
+        logoScrolled: "nav-logo",
+        burgerScrolled: "",
+        menuCircle: "menu-square",
+        toTopLink: "hide-to-top",
+      })
     }
     this.prev = window.scrollY
   }
@@ -47,46 +57,56 @@ class Header extends React.Component {
             <Link to="top" spy={true} smooth={true} offset={-70} duration={500}>
               <Logo isScrolled={this.state.logoScrolled} />
             </Link>
-            <Menu
-              right
-              isOpen={this.state.menuOpen}
-              onStateChange={state => this.handleStateChange(state)}
-              burgerBarClassName={this.state.burgerScrolled}
-            >
-              <Link
-                onClick={() => this.closeMenu()}
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+            <div className={this.state.menuCircle}>
+              <Menu
+                right
+                isOpen={this.state.menuOpen}
+                onStateChange={state => this.handleStateChange(state)}
+                burgerBarClassName={this.state.burgerScrolled}
               >
-                About
-              </Link>
-              <Link
-                onClick={() => this.closeMenu()}
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Skills
-              </Link>
-              <Link
-                onClick={() => this.closeMenu()}
-                activeClass="active"
-                to="work"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Work
-              </Link>
-            </Menu>
+                <Link
+                  onClick={() => this.closeMenu()}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  About
+                </Link>
+                <Link
+                  onClick={() => this.closeMenu()}
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Skills
+                </Link>
+                <Link
+                  onClick={() => this.closeMenu()}
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Work
+                </Link>
+                <Link
+                  onClick={() => this.closeMenu()}
+                  to="top"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  id={this.state.toTopLink}
+                >
+                  Back To Top
+                </Link>
+              </Menu>
+            </div>
           </nav>
         </div>
       </header>

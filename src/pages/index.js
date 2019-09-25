@@ -12,7 +12,6 @@ import {
   faGit,
   faNpm,
   faWordpress,
-  faAdobe,
 } from "@fortawesome/free-brands-svg-icons"
 
 const IndexPage = () => {
@@ -55,6 +54,49 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+
+      <section id="work">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h2>MY WORK</h2>
+              <span className="underline"></span>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h3>JS WORK</h3>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing symbols.
+                  </p>
+                  <button className="btn btn-main">View </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h3>JS WORK</h3>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing symbols.
+                  </p>
+                  <button className="btn btn-main">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="skills">
         <div className="container">
           <div className="row">
@@ -89,49 +131,6 @@ const IndexPage = () => {
             </div>
             <div className="col">
               <FontAwesomeIcon icon={faWordpress} className="fa-tool" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h2>MY WORK</h2>
-              <span className="underline"></span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-12 col-md-6">
-              <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
-                <div className="work-text">
-                  <h4>JS WORK</h4>
-                  <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing Unicode symbols.
-                  </p>
-                  <button className="btn btn-main">View </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
-                <div className="work-text">
-                  <h4>JS WORK</h4>
-                  <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing Unicode symbols.
-                  </p>
-                  <button className="btn btn-main">View</button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
