@@ -2,14 +2,60 @@
   body {
     background-color: green;
   }
+  #banner {
+    text-align: initial;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  #email {
+    a {
+      font-size: 2rem;
+    }
+  }
 }
 @include media-breakpoint-up(md) {
   body {
     background-color: blue;
   }
+  section {
+    padding: 8rem 0;
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  .nav-logo {
+    width: 4.5rem;
+  }
+  .menu-square-scrolled {
+    padding: 1rem;
+    right: 0.5rem;
+  }
+  #email {
+    a {
+      font-size: 2.6rem;
+    }
+  }
+
+  #footer {
+    padding: 2rem 0 1rem 0;
+  }
 }
 @include media-breakpoint-up(lg) {
   body {
     background-color: yellow;
+  }
+  #banner {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+
+  #footer {
+    padding: 3rem 0 1rem 0;
   }
 }

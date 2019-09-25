@@ -18,9 +18,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section id="banner" className="ctext">
+      <section id="banner">
         <div className="wrapper">
-          <div className="container d-flex align-items-center justify-content-center h-100">
+          <div className="container d-flex align-items-center h-100">
             <div className="row">
               <div className="col">
                 <h1 className="light-text">
@@ -80,7 +80,8 @@ const IndexPage = () => {
                     Gesture-controlled note-taking app for writing down your
                     thoughts and typing symbols.
                   </p>
-                  <button className="btn btn-main">View </button>
+                  <button className="btn btn-main">View</button>
+                  <button className="btn btn-main">Github</button>
                 </div>
               </div>
             </div>
@@ -101,6 +102,7 @@ const IndexPage = () => {
                     thoughts and typing symbols.
                   </p>
                   <button className="btn btn-main">View</button>
+                  <button className="btn btn-main">Github</button>
                 </div>
               </div>
             </div>

@@ -22,6 +22,7 @@
   background: $main-color;
   height: 100vh;
   padding: 0;
+  text-align: center;
 }
 // ------------  ABOUT ME STYLES
 
@@ -50,6 +51,9 @@
   padding: 0.5rem 1rem 2rem;
   h3 {
     color: $secondary-color;
+  }
+  button {
+    margin-right: 0.8rem;
   }
 }
 
@@ -96,7 +100,7 @@
     cursor: pointer;
     transition: background 250ms, color 250ms;
     &:hover {
-      color: $white-color;
+      color: #4cf942;
     }
   }
 }
