@@ -53,6 +53,22 @@
   }
 }
 
+.tech-list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  li {
+    background: #6b6b6b42;
+    color: $white-color;
+    margin: 0rem 1rem 1rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10%;
+    font-weight: bold;
+  }
+}
+
 //  ------------ SKILLS STYLES
 
 #skills {

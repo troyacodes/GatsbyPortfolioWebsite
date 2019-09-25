@@ -71,6 +71,11 @@ const IndexPage = () => {
                 </div>
                 <div className="work-text">
                   <h3>JS WORK</h3>
+                  <ul className="tech-list">
+                    <li>HTML</li>
+                    <li>REACT</li>
+                    <li>GIT</li>
+                  </ul>
                   <p>
                     Gesture-controlled note-taking app for writing down your
                     thoughts and typing symbols.
@@ -86,6 +91,11 @@ const IndexPage = () => {
                 </div>
                 <div className="work-text">
                   <h3>JS WORK</h3>
+                  <ul className="tech-list">
+                    <li>HTML</li>
+                    <li>REACT</li>
+                    <li>GIT</li>
+                  </ul>
                   <p>
                     Gesture-controlled note-taking app for writing down your
                     thoughts and typing symbols.
