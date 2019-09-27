@@ -45,7 +45,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <section id="about">
         <div className="container">
           <div className="row">
@@ -65,7 +64,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <section id="work">
         <div className="container">
           <div className="row">
@@ -83,16 +81,23 @@ const IndexPage = () => {
                 <div className="work-text">
                   <h3>React Spotify App</h3>
                   <ul className="tech-list">
-                    <li>HTML</li>
+                    <li>JSX</li>
                     <li>REACT</li>
-                    <li>GIT</li>
+                    <li>REST API</li>
                   </ul>
                   <p>
                     Gesture-controlled note-taking app for writing down your
                     thoughts and typing symbols.
                   </p>
-                  <button className="btn btn-main gang">View</button>
-                  <button className="btn btn-main">Github</button>
+                  <a href="http://troya-music-app.surge.sh/" target="__blank">
+                    <button className="btn btn-main">View Live</button>
+                  </a>
+                  <a
+                    href="https://github.com/troyacodes/Music-App"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Github</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -112,8 +117,67 @@ const IndexPage = () => {
                     Gesture-controlled note-taking app for writing down your
                     thoughts and typing symbols.
                   </p>
-                  <button className="btn btn-main">View</button>
-                  <button className="btn btn-main">Github</button>
+                  <a
+                    href="http://troyacodes-reactulator.surge.sh"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Live</button>
+                  </a>
+                  <a
+                    href="https://github.com/troyacodes/react-calculator"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Github</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h3>Michael Troya Website</h3>
+                  <ul className="tech-list">
+                    <li>SCSS</li>
+                    <li>REACT</li>
+                    <li>GATSBY</li>
+                    <li>GRAPHQL</li>
+                  </ul>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing symbols.
+                  </p>
+                  <a
+                    href="https://github.com/troyacodes/GatsbyPortfolioWebsite"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Github</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <div className="work-img">
+                  <img src={Test} alt="" className="w-100" />
+                </div>
+                <div className="work-text">
+                  <h3>Six Side Media Website</h3>
+                  <ul className="tech-list">
+                    <li>HTML</li>
+                    <li>JS</li>
+                    <li>WORDPRESS</li>
+                    <li>PHP</li>
+                  </ul>
+                  <p>
+                    Gesture-controlled note-taking app for writing down your
+                    thoughts and typing symbols.
+                  </p>
+                  <a href="https://sixsidemedia.ca/" target="__blank">
+                    <button className="btn btn-main">View Live</button>
+                  </a>
                 </div>
               </div>
             </div>
