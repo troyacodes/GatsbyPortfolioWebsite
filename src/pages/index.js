@@ -2,7 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../components/logo"
-import Test from "../images/cat.jpg"
+import Reactify from "../images/reactify.jpg"
+import Reactulator from "../images/reactulator.jpg"
+import Mt from "../images/Mt.jpg"
+import Sixside from "../images/sixside.jpg"
 import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -75,9 +78,7 @@ const IndexPage = () => {
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
+                <img src={Reactify} alt="" className="w-100" />
                 <div className="work-text">
                   <h3>React Spotify App</h3>
                   <ul className="tech-list">
@@ -103,9 +104,7 @@ const IndexPage = () => {
             </div>
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
+                <img src={Reactulator} alt="" className="w-100" />
                 <div className="work-text">
                   <h3>React Calculator</h3>
                   <ul className="tech-list">
@@ -134,9 +133,7 @@ const IndexPage = () => {
             </div>
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
+                <img src={Mt} alt="" className="w-100" />
                 <div className="work-text">
                   <h3>Michael Troya Website</h3>
                   <ul className="tech-list">
@@ -160,9 +157,7 @@ const IndexPage = () => {
             </div>
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
-                <div className="work-img">
-                  <img src={Test} alt="" className="w-100" />
-                </div>
+                <img src={Sixside} alt="" className="w-100" />
                 <div className="work-text">
                   <h3>Six Side Media Website</h3>
                   <ul className="tech-list">
