@@ -57,7 +57,7 @@ class Header extends React.Component {
         <div>
           <nav id="nav-bar">
             <Link to="top" spy={true} smooth={true} offset={0} duration={500}>
-              <Logo isScrolled={this.state.logoScrolled} />
+              <Logo myClass={this.state.logoScrolled} />
             </Link>
             <div className={this.state.menuCircle}>
               <Menu

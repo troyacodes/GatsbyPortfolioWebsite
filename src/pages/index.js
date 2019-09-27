@@ -26,7 +26,7 @@ const IndexPage = () => {
       <section id="banner">
         <div className="wrapper">
           <div className="container d-flex align-items-center h-100">
-            <Logo isScrolled="banner-logo" />
+            <Logo myClass="banner-logo" />
             <div className="row">
               <div className="col">
                 <h1 className="light-text">

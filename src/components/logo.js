@@ -5,7 +5,7 @@ class Logo extends React.Component {
     return (
       <svg
         version="1.1"
-        className={this.props.isScrolled}
+        className={this.props.myClass}
         x="0px"
         y="0px"
         viewBox="0 0 1000 1000"
