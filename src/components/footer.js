@@ -6,7 +6,6 @@ import {
   faInstagram,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
-import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = ({ siteTitle }) => {
   return (

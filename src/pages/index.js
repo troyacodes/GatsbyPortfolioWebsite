@@ -55,13 +55,9 @@ const IndexPage = () => {
               <h2>ABOUT ME</h2>
               <span className="underline"></span>
               <p>
-                I am a Toronto-based software developer. I like learning new
+                I am a Toronto-based front-end developer. I like learning new
                 things, building applications, and solving real-world problems
-                for real-world stakeholders. I have a background in auditing,
-                where I developed skills in collaborative problem-solving,
-                overall financial acumen, and data analysis. When I'm not doing
-                serious things, I'm aggressively passionate about escape rooms,
-                street dance, and board games.
+                for real-world stakeholders.
               </p>
             </div>
           </div>
