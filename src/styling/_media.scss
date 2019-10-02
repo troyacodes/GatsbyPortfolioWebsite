@@ -1,7 +1,4 @@
 @include media-breakpoint-up(sm) {
-  body {
-    background-color: green;
-  }
   #banner {
     text-align: initial;
     h1 {
@@ -15,9 +12,6 @@
   }
 }
 @include media-breakpoint-up(md) {
-  body {
-    background-color: blue;
-  }
   section {
     padding: 8rem 0;
     h2 {
@@ -62,9 +56,6 @@
   }
 }
 @include media-breakpoint-up(lg) {
-  body {
-    background-color: yellow;
-  }
   #banner {
     h1 {
       font-size: 4.5rem;
