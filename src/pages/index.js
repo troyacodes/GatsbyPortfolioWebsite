@@ -59,8 +59,8 @@ const IndexPage = () => {
                 the majority of my skills have been self taught. I started with
                 HTML, CSS, and PHP in 2013 while in high school, messing around
                 with frameworks like CodeIgniter and Bootstrap. Upon graduation
-                I started post-secondary at George Brown College and got a
-                diploma for Computer Programming. While in college I started my
+                I started post-secondary at George Brown College and received a
+                diploma in Computer Programming. While in college I started my
                 freelance business called Six Side Media, mainly focusing on
                 WordPress and graphic design. Recently, I've shifted my focus to
                 front end development, learning modern front end practices and
@@ -92,7 +92,7 @@ const IndexPage = () => {
                     <li>REST API</li>
                   </ul>
                   <p>
-                    Built using React and Spotify's API this application allows
+                    Built using React and Spotify's API, this application allows
                     users to sign in, search for music, and add them to a new
                     playlist.
                   </p>
@@ -120,7 +120,7 @@ const IndexPage = () => {
                   </ul>
                   <p>
                     This is a simple calculator built with React that handles
-                    division, multiplication, addition, and subtraction.
+                    division, multiplication, addition and subtraction.
                   </p>
                   <a
                     href="http://troyacodes-reactulator.surge.sh"
