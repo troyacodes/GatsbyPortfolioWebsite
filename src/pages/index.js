@@ -55,9 +55,18 @@ const IndexPage = () => {
               <h2>ABOUT ME</h2>
               <span className="underline"></span>
               <p>
-                I am a Toronto-based front-end developer. I like learning new
-                things, building applications, and solving real-world problems
-                for real-world stakeholders.
+                I am a Toronto-based front-end developer. Like a lot of people,
+                the majority of my skills have been self taught. I started with
+                HTML, CSS, and PHP in 2013 while in high school, messing around
+                with frameworks like Code Igniter and Bootstrap. Upon graduation
+                I started post-secondary at George Brown College and got a
+                diploma for Computer Programming. While in college I started my
+                freelance business called Six Side Media, mainly focusing on
+                WordPress and Graphic Design. Recently, I have shifted my focus
+                to front end development spending my time teaching myself modern
+                front end practices and frameworks. I enjoy learning new things,
+                building applications, working with people, and solving
+                real-world problems for real-world stakeholders.
               </p>
             </div>
           </div>
@@ -83,8 +92,9 @@ const IndexPage = () => {
                     <li>REST API</li>
                   </ul>
                   <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing symbols.
+                    Built using React and Spotify's API this application allows
+                    users to sign in, search for music, and add them to a new
+                    playlist.
                   </p>
                   <a href="http://troya-music-app.surge.sh/" target="__blank">
                     <button className="btn btn-main">View Live</button>
@@ -109,8 +119,8 @@ const IndexPage = () => {
                     <li>GIT</li>
                   </ul>
                   <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing symbols.
+                    This is a simple calculator built with React that handles
+                    division, multiplication, addition, and subtraction.
                   </p>
                   <a
                     href="http://troyacodes-reactulator.surge.sh"
@@ -139,8 +149,8 @@ const IndexPage = () => {
                     <li>GRAPHQL</li>
                   </ul>
                   <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing symbols.
+                    A static responsive portfolio website built using Gatsby.js
+                    and deployed using Netlify.
                   </p>
                   <a
                     href="https://github.com/troyacodes/GatsbyPortfolioWebsite"
@@ -163,8 +173,8 @@ const IndexPage = () => {
                     <li>PHP</li>
                   </ul>
                   <p>
-                    Gesture-controlled note-taking app for writing down your
-                    thoughts and typing symbols.
+                    A business website created with a fully customized WordPress
+                    theme.
                   </p>
                   <a href="https://sixsidemedia.ca/" target="__blank">
                     <button className="btn btn-main">View Live</button>
@@ -179,7 +189,7 @@ const IndexPage = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h2>MY TOOLBOX</h2>
+              <h2>MY SKILLS</h2>
               <span className="underline"></span>
             </div>
           </div>

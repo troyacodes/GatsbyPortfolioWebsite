@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Michael Troya - Portfolio`,
-    description: ``,
+    description: `Portfolio of Michael Troya, a Toronto based Web Designer & Front End Developer.`,
     author: `Michael Troya`,
   },
   plugins: [
