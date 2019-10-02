@@ -36,12 +36,15 @@ const Footer = ({ siteTitle }) => {
               </a>
             </div>
             <div className="col">
-              <a href="https://github.com/troyacodes" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/michael-troya-b47989115/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
               </a>
             </div>
             <div className="col">
-              <a href="https://github.com/sixsidemedia" target="_blank">
+              <a href="https://instagram.com/sixsidemedia" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
               </a>
             </div>
