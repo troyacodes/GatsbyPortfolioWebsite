@@ -12,6 +12,11 @@
   }
 }
 @include media-breakpoint-up(md) {
+  p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
   section {
     padding: 8rem 0;
     h2 {

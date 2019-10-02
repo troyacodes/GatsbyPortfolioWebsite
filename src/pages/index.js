@@ -62,7 +62,7 @@ const IndexPage = () => {
                 I started post-secondary at George Brown College and got a
                 diploma for Computer Programming. While in college I started my
                 freelance business called Six Side Media, mainly focusing on
-                WordPress and Graphic Design. Recently, I've shifted my focus to
+                WordPress and graphic design. Recently, I've shifted my focus to
                 front end development, learning modern front end practices and
                 frameworks. I enjoy learning new things, building applications,
                 working with people, and solving real-world problems for
