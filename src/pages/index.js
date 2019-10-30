@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../components/logo"
-import Reactify from "../images/reactify.jpg"
-import Reactulator from "../images/reactulator.jpg"
-import Mt from "../images/mt.jpg"
-import Sixside from "../images/sixside.jpg"
+import Reactify from "../images/reactify.png"
+import Reactulator from "../images/reactulator.png"
+import Socialbug from "../images/socialbug.png"
+import Mt from "../images/mt.png"
 import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -83,6 +83,67 @@ const IndexPage = () => {
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
+                <img src={Mt} alt="" className="w-100" />
+                <div className="work-text">
+                  <h3>Michael Troya Website</h3>
+                  <ul className="tech-list">
+                    <li>SCSS</li>
+                    <li>REACT</li>
+                    <li>GATSBY</li>
+                    <li>GRAPHQL</li>
+                  </ul>
+                  <p>
+                    The current static portfolio website you are viewing was
+                    created using Gatsby.js, SCSS, and bootstrap.
+                  </p>
+                  <a
+                    href="https://github.com/troyacodes/GatsbyPortfolioWebsite"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Github</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <img src={Socialbug} alt="" className="w-100" />
+                <div className="work-text">
+                  <h3>Social Bug Application</h3>
+                  <ul className="tech-list">
+                    <li>REACT</li>
+                    <li>REDUX</li>
+                    <li>EXPRESS/NODE</li>
+                    <li>FIREBASE</li>
+                  </ul>
+                  <p>
+                    A fullstack app featuring a backend built with Node/Express
+                    on top of Firebase and frontend created using React/Redux
+                    and Material UI.
+                  </p>
+                  <a
+                    href="https://socialbug-bd2eb.firebaseapp.com/"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Live</button>
+                  </a>
+                  <a
+                    href="https://github.com/troyacodes/socialbug-react-frontend"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Frontend</button>
+                  </a>
+                  <a
+                    href="https://github.com/troyacodes/socialbug-firebase-backend"
+                    target="__blank"
+                  >
+                    <button className="btn btn-main">View Backend</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
                 <img src={Reactify} alt="" className="w-100" />
                 <div className="work-text">
                   <h3>React Spotify App</h3>
@@ -133,51 +194,6 @@ const IndexPage = () => {
                     target="__blank"
                   >
                     <button className="btn btn-main">View Github</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              <div className="work-item">
-                <img src={Mt} alt="" className="w-100" />
-                <div className="work-text">
-                  <h3>Michael Troya Website</h3>
-                  <ul className="tech-list">
-                    <li>SCSS</li>
-                    <li>REACT</li>
-                    <li>GATSBY</li>
-                    <li>GRAPHQL</li>
-                  </ul>
-                  <p>
-                    A static responsive portfolio website built using Gatsby.js
-                    and deployed using Netlify.
-                  </p>
-                  <a
-                    href="https://github.com/troyacodes/GatsbyPortfolioWebsite"
-                    target="__blank"
-                  >
-                    <button className="btn btn-main">View Github</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              <div className="work-item">
-                <img src={Sixside} alt="" className="w-100" />
-                <div className="work-text">
-                  <h3>Six Side Media Website</h3>
-                  <ul className="tech-list">
-                    <li>HTML</li>
-                    <li>JS</li>
-                    <li>WORDPRESS</li>
-                    <li>PHP</li>
-                  </ul>
-                  <p>
-                    A business website created with a fully customized WordPress
-                    theme.
-                  </p>
-                  <a href="https://sixsidemedia.ca/" target="__blank">
-                    <button className="btn btn-main">View Live</button>
                   </a>
                 </div>
               </div>
