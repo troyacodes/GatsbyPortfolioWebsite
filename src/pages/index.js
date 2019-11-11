@@ -134,7 +134,7 @@ const IndexPage = () => {
                     <button className="btn btn-main">View Frontend</button>
                   </a>
                   <a
-                    href="https://github.com/troyacodes/socialbug-firebase-backend"
+                    href="https://github.com/troyacodes/socialbug-fb-express-backend"
                     target="__blank"
                   >
                     <button className="btn btn-main">View Backend</button>
