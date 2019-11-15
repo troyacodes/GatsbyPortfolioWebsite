@@ -8,16 +8,7 @@ import Socialbug from "../images/socialbug.png"
 import Mt from "../images/mt.png"
 import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faJsSquare,
-  faReact,
-  faHtml5,
-  faSass,
-  faCss3Alt,
-  faGit,
-  faNpm,
-  faWordpress,
-} from "@fortawesome/free-brands-svg-icons"
+import { faJsSquare, faReact, faHtml5, faSass, faCss3Alt, faGit, faNpm, faWordpress } from "@fortawesome/free-brands-svg-icons"
 
 const IndexPage = () => {
   return (
@@ -31,16 +22,9 @@ const IndexPage = () => {
               <div className="col">
                 <h1 className="light-text">
                   Hello, <br />
-                  I'm <span className="dark-text">Michael</span>,<br />a Front
-                  End Developer
+                  I'm <span className="dark-text">Michael</span>,<br />a Front End Developer
                 </h1>
-                <Link
-                  to="work"
-                  spy={true}
-                  smooth={true}
-                  offset={80}
-                  duration={500}
-                >
+                <Link to="work" spy={true} smooth={true} offset={80} duration={500}>
                   <button className="btn btn-main">View Work</button>
                 </Link>
               </div>
@@ -55,18 +39,12 @@ const IndexPage = () => {
               <h2>ABOUT ME</h2>
               <span className="underline"></span>
               <p>
-                I am a Toronto-based front end developer. Like a lot of people,
-                the majority of my skills have been self taught. I started with
-                HTML, CSS, and PHP in 2013 while in high school, messing around
-                with frameworks like CodeIgniter and Bootstrap. Upon graduation
-                I started post-secondary at George Brown College and received a
-                diploma in Computer Programming. While in college I started my
-                freelance business called Six Side Media, mainly focusing on
-                WordPress and graphic design. Recently, I've shifted my focus to
-                front end development, learning modern front end practices and
-                frameworks. I enjoy learning new things, building applications,
-                working with people, and solving real-world problems for
-                real-world stakeholders.
+                I am a Toronto-based front end developer. Like a lot of people, the majority of my skills have been self taught. I started with HTML,
+                CSS, and PHP in 2013 while in high school, messing around with frameworks like CodeIgniter and Bootstrap. Upon graduation I started
+                post-secondary at George Brown College and received a diploma in Computer Programming. While in college I started my freelance
+                business called Six Side Media, mainly focusing on WordPress and graphic design. Recently, I've shifted my focus to front end
+                development, learning modern front end practices and frameworks. I enjoy learning new things, building applications, working with
+                people, and solving real-world problems for real-world stakeholders.
               </p>
             </div>
           </div>
@@ -92,14 +70,8 @@ const IndexPage = () => {
                     <li>GATSBY</li>
                     <li>GRAPHQL</li>
                   </ul>
-                  <p>
-                    The current static portfolio website you are viewing was
-                    created using Gatsby.js, SCSS, and bootstrap.
-                  </p>
-                  <a
-                    href="https://github.com/troyacodes/GatsbyPortfolioWebsite"
-                    target="__blank"
-                  >
+                  <p>The current static portfolio website you are viewing was created using Gatsby.js, SCSS, and bootstrap.</p>
+                  <a href="https://github.com/troyacodes/GatsbyPortfolioWebsite" target="__blank">
                     <button className="btn btn-main">View Github</button>
                   </a>
                 </div>
@@ -117,26 +89,16 @@ const IndexPage = () => {
                     <li>FIREBASE</li>
                   </ul>
                   <p>
-                    A fullstack app featuring a backend built with Node/Express
-                    on top of Firebase and frontend created using React/Redux
-                    and Material UI.
+                    A fullstack app featuring a backend built with Node/Express on top of Firebase and frontend created using React/Redux and Material
+                    UI.
                   </p>
-                  <a
-                    href="https://socialbug-bd2eb.firebaseapp.com/"
-                    target="__blank"
-                  >
+                  <a href="https://socialbug-bd2eb.firebaseapp.com/" target="__blank">
                     <button className="btn btn-main">View Live</button>
                   </a>
-                  <a
-                    href="https://github.com/troyacodes/socialbug-react-frontend"
-                    target="__blank"
-                  >
+                  <a href="https://github.com/troyacodes/socialbug-react-frontend" target="__blank">
                     <button className="btn btn-main">View Frontend</button>
                   </a>
-                  <a
-                    href="https://github.com/troyacodes/socialbug-fb-express-backend"
-                    target="__blank"
-                  >
+                  <a href="https://github.com/troyacodes/socialbug-fb-express-backend" target="__blank">
                     <button className="btn btn-main">View Backend</button>
                   </a>
                 </div>
@@ -153,17 +115,12 @@ const IndexPage = () => {
                     <li>REST API</li>
                   </ul>
                   <p>
-                    Built using React and Spotify's API, this application allows
-                    users to sign in, search for music, and add them to a new
-                    playlist.
+                    Built using React and Spotify's API, this application allows users to sign in, search for music, and add them to a new playlist.
                   </p>
                   <a href="http://troya-music-app.surge.sh/" target="__blank">
                     <button className="btn btn-main">View Live</button>
                   </a>
-                  <a
-                    href="https://github.com/troyacodes/Music-App"
-                    target="__blank"
-                  >
+                  <a href="https://github.com/troyacodes/Music-App" target="__blank">
                     <button className="btn btn-main">View Github</button>
                   </a>
                 </div>
@@ -179,20 +136,11 @@ const IndexPage = () => {
                     <li>REACT</li>
                     <li>GIT</li>
                   </ul>
-                  <p>
-                    This is a simple calculator built with React that handles
-                    division, multiplication, addition and subtraction.
-                  </p>
-                  <a
-                    href="http://troyacodes-reactulator.surge.sh"
-                    target="__blank"
-                  >
+                  <p>This is a simple calculator built with React that handles division, multiplication, addition and subtraction.</p>
+                  <a href="https://sad-joliot-a5fe88.netlify.com/" target="__blank">
                     <button className="btn btn-main">View Live</button>
                   </a>
-                  <a
-                    href="https://github.com/troyacodes/react-calculator"
-                    target="__blank"
-                  >
+                  <a href="https://github.com/troyacodes/react-calculator" target="__blank">
                     <button className="btn btn-main">View Github</button>
                   </a>
                 </div>
