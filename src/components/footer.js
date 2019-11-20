@@ -31,7 +31,11 @@ const Footer = ({ siteTitle }) => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <a href="https://github.com/troyacodes" target="_blank">
+              <a
+                href="https://github.com/troyacodes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} className="fa-icon" />
               </a>
             </div>
@@ -39,17 +43,26 @@ const Footer = ({ siteTitle }) => {
               <a
                 href="https://www.linkedin.com/in/michael-troya-b47989115/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
               </a>
             </div>
             <div className="col">
-              <a href="https://instagram.com/sixsidemedia" target="_blank">
+              <a
+                href="https://instagram.com/sixsidemedia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
               </a>
             </div>
             <div className="col">
-              <a href="https://dribbble.com/MichaelTroya" target="_blank">
+              <a
+                href="https://dribbble.com/MichaelTroya"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faDribbble} className="fa-icon" />
               </a>
             </div>
