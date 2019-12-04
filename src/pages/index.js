@@ -162,7 +162,7 @@ const IndexPage = () => {
                     Socket.io, Node.js, React.js and custom styling using SCSS
                   </p>
                   <a
-                    href="https://5dcf3053ac46dac109605161--jabber-chat.netlify.com/"
+                    href="https://troyacodes-jabber-chat.netlify.com"
                     target="__blank"
                     rel="noopener noreferrer"
                   >
