@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Logo from "../components/logo"
 import Jabber from "../images/jabber.png"
 import Reactulator from "../images/reactulator.png"
+import Filmstudy from "../images/filmstudy.png"
 import Socialbug from "../images/socialbug.png"
 import Mt from "../images/mt.png"
 import { Link } from "react-scroll"
@@ -110,7 +111,7 @@ const IndexPage = () => {
               <div className="work-item">
                 <img src={Socialbug} alt="" className="w-100" />
                 <div className="work-text">
-                  <h3>Social Bug Application</h3>
+                  <h3>Social Bug App</h3>
                   <ul className="tech-list">
                     <li>REACT</li>
                     <li>REDUX</li>
@@ -147,11 +148,45 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+
+            <div className="col-sm-12 col-md-6">
+              <div className="work-item">
+                <img src={Filmstudy} alt="" className="w-100" />
+                <div className="work-text">
+                  <h3>Film Study App</h3>
+                  <ul className="tech-list">
+                    <li>REACT</li>
+                    <li>REST API</li>
+                    <li>BOOTSTRAP</li>
+                    <li>SCSS</li>
+                  </ul>
+                  <p>
+                    This single page web app retrieves data from the MovieDB API
+                    and displays informative stats based on the movies users
+                    select
+                  </p>
+                  <a
+                    href="https://troyacodes-filmstudy.netlify.com/"
+                    target="__blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-main">View Live</button>
+                  </a>
+                  <a
+                    href="https://github.com/troyacodes/filmstudy"
+                    target="__blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-main">View Github</button>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="col-sm-12 col-md-6">
               <div className="work-item">
                 <img src={Jabber} alt="" className="w-100" />
                 <div className="work-text">
-                  <h3>React Spotify App</h3>
+                  <h3>Jabber Chat App</h3>
                   <ul className="tech-list">
                     <li>NODE JS</li>
                     <li>REACT</li>
@@ -170,37 +205,6 @@ const IndexPage = () => {
                   </a>
                   <a
                     href="https://github.com/troyacodes/jabber"
-                    target="__blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="btn btn-main">View Github</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              <div className="work-item">
-                <img src={Reactulator} alt="" className="w-100" />
-                <div className="work-text">
-                  <h3>React Calculator</h3>
-                  <ul className="tech-list">
-                    <li>HTML</li>
-                    <li>REACT</li>
-                    <li>GIT</li>
-                  </ul>
-                  <p>
-                    This is a simple calculator built with React that handles
-                    division, multiplication, addition and subtraction.
-                  </p>
-                  <a
-                    href="https://troyacodes-reactulator.netlify.com/"
-                    target="__blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="btn btn-main">View Live</button>
-                  </a>
-                  <a
-                    href="https://github.com/troyacodes/react-calculator"
                     target="__blank"
                     rel="noopener noreferrer"
                   >
