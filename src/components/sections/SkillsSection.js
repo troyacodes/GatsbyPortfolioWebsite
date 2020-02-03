@@ -9,7 +9,7 @@ import {
   faCss3Alt,
   faGit,
   faNpm,
-  faWordpress,
+  faNodeJs,
 } from "@fortawesome/free-brands-svg-icons"
 
 function SkillsSection() {
@@ -52,8 +52,8 @@ function SkillsSection() {
             <h5>NPM</h5>
           </div>
           <div className="col col-md-3">
-            <FontAwesomeIcon icon={faWordpress} className="fa-tool" />
-            <h5>Wordpress</h5>
+            <FontAwesomeIcon icon={faNodeJs} className="fa-tool" />
+            <h5>NODE JS</h5>
           </div>
         </div>
       </div>
