@@ -69,7 +69,7 @@ const Footer = ({ siteTitle }) => {
           </div>
           <div className="row">
             <div className="col">
-              <p>© 2019 Michael Troya.</p>
+              <p>© 2020 Michael Troya.</p>
             </div>
           </div>
         </div>

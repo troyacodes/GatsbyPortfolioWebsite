@@ -12,8 +12,8 @@ function BannerSection() {
             <div className="col">
               <h1 className="light-text">
                 Hello, <br />
-                I'm <span className="dark-text">Michael</span>,<br />a Front End
-                Developer
+                I'm <span className="dark-text">Michael</span>,<br />a
+                Full-Stack Developer
               </h1>
               <Link
                 to="work"
